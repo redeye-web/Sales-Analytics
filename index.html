@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1> Sales Analytiycs</h1>
+        <p>Upload ur sales CSV to get the business analytics</p>
+    </header>
+    <div class="container">
+        <section class="upload">
+            <h2>Upload ur sales data</h2>
+            <input type="file" id="csvfile" accept=".csv">
+            <p class="fileinfo">Expected format: date, product, category, price, quantity, City</p>
+        </section>
+        <section class="summary" id="summary" style="display: none;">
+            <h2>Quick Summary</h2>
+            <div class="CardContainer">
+                <div class="card">
+                    <h3>Total Revenue</h3>
+                    <p class="card-value" id="totalRevenue">₹0</p>
+                </div>
+                <div class="card">
+                    <h3>Total Orders</h3>
+                    <p class="card-value" id="totalOrders">0</p>
+                </div>
+                <div class="card">
+                    <h3>Best Selling Product</h3>
+                    <p class="card-value" id="bestProduct">-</p>
+                </div>
+                <div class="card">
+                    <h3>Top City</h3>
+                    <p class="card-value" id="topCity">-</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+header {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+header h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+header p {
+    color: #666;
+    font-size: 1.1em;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.upload {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.upload h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+#csvfile {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px dashed #667eea;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f8f9ff;
+    display: inline-block;
+}
+#csvfile:hover {
+    background: #e8ebff;
+    border-color: #764ba2;
+}
+.fileinfo {
+    margin-top: 15px;
+    color: #666;
+    font-size: 0.9em;
+}
+.summary {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.summary h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.CardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card h3 {
+    font-size: 1em;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+.card-value {
+    font-size: 2em;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .CardContainer {
+        grid-template-columns: 1fr;
+    }
+}
